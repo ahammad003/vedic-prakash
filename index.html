@@ -20,7 +20,7 @@
 /* ============ TOKENS ============ */
 :root{
   --ink:#04201a; --em900:#052e22; --em800:#0a4a36; --em700:#0f6b4a;
-  --green:#43b93e; --lime:#b6ec6a; --blue:#2e7bc0;
+  --green:#43b93e; --lime:#b6ec6a; --blue:#2e7bc0; cs 
   --gold:#f7c948; --saffron:#ff8a1f; --ruby:#e11d48; --teal:#14b8a6;
   --cream:#fbf8ee; --paper:#f1f7ec; --text:#18352b; --muted:#53695f;
   --display:'Cinzel','Trajan Pro',Georgia,serif;
@@ -296,6 +296,12 @@ h1 em{font-style:normal;background:linear-gradient(100deg,#ffd76a,#ff9f1c,#ffe9a
 .q-more{display:none;align-self:flex-start;align-items:center;gap:6px;margin-top:-8px;font-size:.85rem;font-weight:600;color:var(--gold);border-bottom:1px solid rgba(247,201,72,.5);padding-bottom:1px;transition:color .3s}
 .q-more:hover{color:#fff}
 .quote.has-more .q-more{display:inline-flex}
+.vq .vshort{position:relative;width:100%;aspect-ratio:9/16;border-radius:16px;overflow:hidden;background:#04201a;border:1.5px solid rgba(247,201,72,.55)}
+.vq .vshort iframe,.vq .vshort-play{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.vq .vshort-play img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.vq .vshort-play:hover img{transform:scale(1.05)}
+.vq .vshort-play::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,32,26,.05),rgba(4,32,26,.5))}
+.vq::before{display:none}
 .tnav{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:10px}
 .tbtn{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;color:#2a1300;background:linear-gradient(135deg,#ffd76a,#ff9f1c);box-shadow:0 8px 22px rgba(255,138,31,.4);transition:transform .35s var(--ease)}
 .tbtn:hover{transform:scale(1.1)}.tbtn:active{transform:scale(.94)}
@@ -630,9 +636,11 @@ footer{background:#031812;color:#bfe0d0;padding-block:36px 100px}
     <div class="center rv"><span class="eyebrow">Student testimonials</span><h2 class="sec-title">Real Learners. <em>Real Feedback.</em></h2><p class="sec-sub">See how the demo has helped learners understand the methodology better.</p></div>
     <div class="tcar mt rv" id="tcar">
       <div class="ttrack" id="ttrack" tabindex="0" aria-label="Student testimonials">
+      <div class="quote vq"><div class="vshort"><button type="button" class="vshort-play" data-yt="5O9uqU_b9Gg" aria-label="Play student video testimonial 1"><img src="https://i.ytimg.com/vi/5O9uqU_b9Gg/oq1.jpg" alt="" loading="lazy"><span class="vid-btn"><svg class="ico" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></button></div><span class="stars-r" aria-hidden="true">★★★★★</span><div class="who"><span class="avatar"><svg class="ico"><use href="#i-user"/></svg></span><div><b>Verified Student</b><span>Video testimonial</span></div></div></div>
+      <div class="quote vq"><div class="vshort"><button type="button" class="vshort-play" data-yt="HhvK6XbrUU8" aria-label="Play student video testimonial 2"><img src="https://i.ytimg.com/vi/HhvK6XbrUU8/oq1.jpg" alt="" loading="lazy"><span class="vid-btn"><svg class="ico" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></button></div><span class="stars-r" aria-hidden="true">★★★★★</span><div class="who"><span class="avatar"><svg class="ico"><use href="#i-user"/></svg></span><div><b>Verified Student</b><span>Video testimonial</span></div></div></div>
+      <div class="quote vq"><div class="vshort"><button type="button" class="vshort-play" data-yt="8IIAOjpqUok" aria-label="Play student video testimonial 3"><img src="https://i.ytimg.com/vi/8IIAOjpqUok/oq1.jpg" alt="" loading="lazy"><span class="vid-btn"><svg class="ico" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></button></div><span class="stars-r" aria-hidden="true">★★★★★</span><div class="who"><span class="avatar"><svg class="ico"><use href="#i-user"/></svg></span><div><b>Verified Student</b><span>Video testimonial</span></div></div></div>
       <div class="quote"><span class="stars-r" aria-hidden="true">★★★★★</span><p>“I appreciate Sanjiv Sir’s knowledge and patient guidance. He explained me life path and destiny numbers with such depth, helping me understand myself on a whole new level.”</p><div class="who"><span class="avatar"><svg class="ico"><use href="#i-user"/></svg></span><div><b>Verified Student
       </b><span> Subodh Kaushuk</span></div></div></div>
-      <div class="quote vq"><div class="vshort"><button type="button" class="vshort-play" data-yt="HhvK6XbrUU8" aria-label="Play student video testimonial 2"><img src="https://i.ytimg.com/vi/HhvK6XbrUU8/oq1.jpg" alt="" loading="lazy"><span class="vid-btn"><svg class="ico" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></button></div><span class="stars-r" aria-hidden="true">★★★★★</span><div class="who"><span class="avatar"><svg class="ico"><use href="#i-user"/></svg></span><div><b>Verified Student</b><span>Alok Mishra</span></div></div></div>
       <div class="quote"><span class="stars-r" aria-hidden="true">★★★★★</span><p>“Sanjiv Tiwari sir’s approach is so positive and empowering. They didn't just give us just information; infect he gave us skills and technique to understand the world of numbers. I would recommend others to can join his professional numerology course.”</p><div class="who"><span class="avatar"><svg class="ico"><use href="#i-user"/></svg></span><div><b>Verified Student</b><span> Sujoy Goswami </span></div></div></div>
       <div class="quote"><span class="stars-r" aria-hidden="true">★★★★★</span><p>“I found him very articulate and helpful for giving answers to whatever questions we had. I was in his offline batch held at Jaipur, Rajasthan, I gained too much confidence with my prediction, definitely I would suggest to others to join his course. 
         Jay Shree Krishna…🙏🙏
@@ -644,7 +652,6 @@ footer{background:#031812;color:#bfe0d0;padding-block:36px 100px}
           🙏🙏 🙏🙏
           ”</p><div class="who"><span class="avatar"><svg class="ico"><use href="#i-user"/></svg></span><div><b>Verified Student
         </b><span>Karunamoyi Majumdar</span></div></div></div>
-        <div class="quote vq"><div class="vshort"><button type="button" class="vshort-play" data-yt="8IIAOjpqUok" aria-label="Play student video testimonial 3"><img src="https://i.ytimg.com/vi/8IIAOjpqUok/oq1.jpg" alt="" loading="lazy"><span class="vid-btn"><svg class="ico" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></button></div><span class="stars-r" aria-hidden="true">★★★★★</span><div class="who"><span class="avatar"><svg class="ico"><use href="#i-user"/></svg></span><div><b>Verified Student</b><span>Amrita</span></div></div></div>
         <div class="quote"><span class="stars-r" aria-hidden="true">★★★★★</span><p>“His understanding of numbers and how accurately the numbers spoke to him made me believe in the science of numerology.
           👌👌 👌👌
           ”</p><div class="who"><span class="avatar"><svg class="ico"><use href="#i-user"/></svg></span><div><b>Verified Student
@@ -656,7 +663,6 @@ footer{background:#031812;color:#bfe0d0;padding-block:36px 100px}
         <div class="quote"><span class="stars-r" aria-hidden="true">★★★★★</span><p>“The session gave me clarity about my strengths and why certain patterns were repeating in my life. It felt deeply personal and enlightening.  feel more confident and self-aware than ever before.
           ”</p><div class="who"><span class="avatar"><svg class="ico"><use href="#i-user"/></svg></span><div><b>Verified Student
         </b><span>Arun Prasad</span></div></div></div>
-        <div class="quote vq"><div class="vshort"><button type="button" class="vshort-play" data-yt="5O9uqU_b9Gg" aria-label="Play student video testimonial 1"><img src="https://i.ytimg.com/vi/5O9uqU_b9Gg/oq1.jpg" alt="" loading="lazy"><span class="vid-btn"><svg class="ico" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></button></div><span class="stars-r" aria-hidden="true">★★★★★</span><div class="who"><span class="avatar"><svg class="ico"><use href="#i-user"/></svg></span><div><b>Verified Student</b><span>Video testimonial</span></div></div></div>
         <div class="quote"><span class="stars-r" aria-hidden="true">★★★★★</span><p>“I was amazed by how accurate my numerology reading was. It helped me make better career decisions and understand my life path clearly. Highly recommended!
 
           ”</p><div class="who"><span class="avatar"><svg class="ico"><use href="#i-user"/></svg></span><div><b>Verified Student
@@ -824,10 +830,10 @@ $$(".bgchakra .g").forEach(function(g){g.style.animationPlayState="inherit"});
   var tr=$("#ttrack"); if(!tr)return;
   var box=$("#tcar"),btn=$("#tpause"),lbl=$(".tp-lbl",btn);
   var originals=$$(".quote",tr),pos=0,half=0,last=0,userPaused=reduce,hold=0,nudge=0,visible=true,SPEED=38;
-  originals.forEach(function(q){var p=$("p",q);p.classList.add("q-text");var m=document.createElement("button");m.type="button";m.className="q-more";m.setAttribute("aria-expanded","false");m.textContent="Read more";p.after(m)});
+  originals.forEach(function(q){var p=$("p",q);if(!p)return;p.classList.add("q-text");var m=document.createElement("button");m.type="button";m.className="q-more";m.setAttribute("aria-expanded","false");m.textContent="Read more";p.after(m)});
   function build(){
     $$(".qclone",tr).forEach(function(c){c.remove()});
-    originals.forEach(function(q){q.classList.remove("open");q.classList.remove("has-more");var p=$(".q-text",q);if(p.scrollHeight>p.clientHeight+1)q.classList.add("has-more");$(".q-more",q).textContent="Read more"});
+    originals.forEach(function(q){q.classList.remove("open");q.classList.remove("has-more");var p=$(".q-text",q);if(!p)return;if(p.scrollHeight>p.clientHeight+1)q.classList.add("has-more");$(".q-more",q).textContent="Read more"});
     hold=0;
     var step=originals.length>1?originals[1].offsetLeft-originals[0].offsetLeft:tr.clientWidth;
     var set=step*originals.length,k=Math.max(1,Math.ceil(tr.clientWidth/set));
@@ -849,6 +855,8 @@ $$(".bgchakra .g").forEach(function(g){g.style.animationPlayState="inherit"});
   btn.addEventListener("click",function(){setPaused(!userPaused)});
   /* read more / read less */
   tr.addEventListener("click",function(e){
+    var v=e.target.closest(".vshort-play");
+    if(v){var f=document.createElement("iframe");f.src="https://www.youtube.com/embed/"+v.getAttribute("data-yt")+"?autoplay=1&rel=0&modestbranding=1&playsinline=1";f.title="Student video testimonial";f.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";f.allowFullscreen=true;v.parentNode.replaceChild(f,v);setPaused(true);return}
     var b=e.target.closest(".q-more");if(!b)return;
     var q=b.closest(".quote"),open=!q.classList.contains("open");
     q.classList.toggle("open",open);b.textContent=open?"Read less":"Read more";b.setAttribute("aria-expanded",open?"true":"false");
